@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - E-Waste Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">E-Waste Management</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="agents.html">Agents</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <p class="intro-text">Choose your device condition to get instant suggestions.</p>
+
+    <div class="condition-buttons">
+      <button onclick="showPrompt('good')">Good</button>
+      <button onclick="showPrompt('fair')">Fair</button>
+      <button onclick="showPrompt('poor')">Poor</button>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Check Condition</h3>
+        <p>Evaluate whether your device is working well, going bad or needs a replacement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Repair or Sell</h3>
+        <p>Based on condition, get instant suggestions to repair, sell or recycle your device.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eco-Friendly Disposal</h3>
+        <p>We recommend certified methods for safely recycling your e-waste.</p>
+      </div>
+      <div class="service-card">
+        <h3>Agent Support</h3>
+        <p>Connect with trusted engineers and e-waste professionals near you.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showPrompt(condition) {
+      if (condition === 'good') {
+        alert("Your device condition is not bad, just needs a repair.");
+      } else if (condition === 'fair') {
+        alert("Your device condition is going bad. Consider selling or repairing.");
+      } else if (condition === 'poor') {
+        alert("Sell it please and buy a new one.");
+      }
+    }
+  </script>
+</body>
+</html>
